@@ -7,11 +7,11 @@
     <script src="https://kit.fontawesome.com/d50d92b724.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body id="body">
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo"/>
+                <a href="/"><img src="images/logo2.png" class="logo" onclick="route()"/></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -23,8 +23,8 @@
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Kevin</span> Jen <br/> From Australia</h1>
+                <p>ML/DL Engineer</p>
+                <h1>Hi, I'm <span>Mauj</span> Mishra <br/> From India</h1>
             </div>
         </div>
     </div>
@@ -32,11 +32,14 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png"/>
+                    <img src="images/20230921_165724 2.jpg"/>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem tristique, dictum sapien et, accumsan libero.</p>
+                    <p>
+                        Hello! I'm Mauj, a tech enthusiast and Associate Machine Learning Scientist at <span id="external_link"><a href="https://www.wadhwaniai.org/" target="_blank">Wadhwani AI</a></span>. With a passion for innovation, I excel in Machine Learning, Deep Learning, Computer Vision, and Full Stack Web Development. With 14 months of internships and 6 months of full-time experience, I'm on a mission to make a meaningful impact. Let's turn ideas into reality together!
+
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -45,23 +48,27 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br/>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br/>Web App Development</li>
-                            <li><span>App Development</span><br/>Building Android/IOS Apps</li>
+                            <li><span>Machine Learning</span><br/>Designing and Building Machine Learning Systems</li>
+                            <li><span>Deep Learning</span><br/>Implementing Neural Networks for Advanced Pattern Recognition</li>
+                            <li><span>Computer Vision</span><br/>Developing Solutions for Visual Data Interpretation and Automation.</li>
+                            <li><span>Full Stack Web Development</span><br/>Creating Seamless and User-Friendly Web Applications.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br/>UI/UX Designing Training</li>
-                            <li><span>2021 - Current</span><br/>UI/UX Designing Training</li>
-                            <li><span>2021 - Current</span><br/>UI/UX Designing Training</li>
+                            <li><span>July'23 - Current</span><br/>Associate Machine Learning Scientist at <span id="external_link"><a href="https://www.wadhwaniai.org/" target="_blank">Wadhwani AI</a></span></li>
+                            <li><span>March'23 - April'23</span><br/>Machine Learning Intern at <span id="external_link"><a href="https://www.truefan.in/" target="_blank">TrueFan</a></span></li>
+                            <li><span>April'22 - August'22</span><br/>Data Science Intern at <span id="external_link"><a href="https://www.mfilterit.com/" target="_blank">mFilterIt</a></span></li>
+                            <li><span>Febuary'22 - March'22</span><br/>Data Science Intern at <span id="external_link"><a href="https://www.seekace.com/" target="_blank">SeekACE</a></span></li>
+                            <li><span>December'20 - April'21</span><br/>Web Development Intern at <span id="external_link"><a href="https://www.nesoacademy.org/" target="_blank">Neso Academy</a></span></li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021</span><br/>Electrical Engineering</li>
-                            <li><span>2021</span><br/>Electrical Engineering</li>
-                            <li><span>2021</span><br/>Electrical Engineering</li>
+                            <li><span>2019 - 2023</span><br/>Bachelor of Technology in Electrical and Computer Science Engineering</li>
+                            <li><span>2017 - 2019</span><br/>Intermediate (Physics, Chemistry, and Maths)</li>
+                            <li><span>2015 - 2017</span><br/>High School</li>
                         </ul>
                     </div>
                 </div>
@@ -74,22 +81,22 @@
 
             <div class="services-list">
                 <div>
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Computer Vision Applications</h2>
+                    <p>Create applications for visual data interpretation, enabling automation and efficiency.</p>
+                    <!-- <a href="">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Machine Learning Solutions</h2>
+                    <p>Develop custom machine learning systems tailored to your specific needs.</p>
+                    <!-- <a href="">Learn More</a> -->
+                </div>
+                <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
-                    <a href="">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
-                    <a href="">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
-                    <a href="">Learn More</a>
+                    <h2>Web Development Services</h2>
+                    <p>Design and build responsive, user-friendly websites with a focus on functionality and aesthetics.</p>
+                    <!-- <a href="">Learn More</a> -->
                 </div>
             </div>
         </div>
@@ -99,31 +106,30 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png"/>
+                    <img src="images/cricket_1.jpeg"/>
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Event Detection in Cricket</h3>
+                        <p>Detects various events associated with a single ball delivery in a cricket match</p>
+                        <a href="/event-detection" onclick="route()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png"/>
+                    <img src="images/drowsiness_thumbnail.jpg"/>
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Driver Drowsiness Detection</h3>
+                        <p>Identify and classify driver's eye state as alert or drowsy</p>
+                        <a href="/driver-drowiness-detection" onclick="route()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png"/>
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Neso Academy Website</h3>
+                        <p>Developed the code for the Neso Academy website</p>
+                        <a href="/neso-academy-website" onclick="route()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn">See More</a>
         </div>
     </div>
     <div id="contact">
@@ -134,12 +140,10 @@
                     <p><i class="fa-solid fa-paper-plane"></i> mauj.mishra@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i>+91-6395581262</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/mauj-mishra-455b161a4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MaujMishra" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="images/my-cv.pdf" class="btn btn2" download target="_blank">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1DpX8MTQll0JfCWmWTrPkSFZlg-kZy1wR/view?usp=sharing" class="btn btn2" download target="_blank">View CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet" >
@@ -199,5 +203,6 @@
         })
 
     </script>
+    <script src="./main.js" type="text/javascript"></script>
 </body>
 </html>
