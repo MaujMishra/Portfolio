@@ -9,13 +9,13 @@ const routes = {
     "/": "/index.html",
     "/event-detection": "/event-detection.html",
     "/driver-drowsiness-detection": "/driver-drowsiness.html",
-    "neso-academy-website": "/neso.html"
+    "/neso-academy-website": "/neso.html"
 }
 
 async function handleLocation() {
     const path = window.location.pathname
-    const route = routes[path] || route["404"]
-    const html = await fetch(route).then((data) => data.text())
+    const route_name = routes[path] || routes["404"]
+    const html = await fetch(route_name).then((data) => data.text())
     document.getElementById("body").innerHTML = html
 }
 

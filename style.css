@@ -11,15 +11,21 @@ html {
 
 body {
     background: #080808;
-    color: #fff
+    color: #fff;
+    height: 100%;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
+    background-image: url(images/background-final.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-event {
+    width: 100%;
 }
 
 .container {
@@ -33,8 +39,13 @@ nav {
     flex-wrap: wrap;
 }
 
+nav a {
+    text-decoration: None;
+    
+}
+
 .logo {
-    width: 140px;
+    width: 125px;
 }
 
 nav ul li {
@@ -101,6 +112,11 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+#external_link a {
+    text-decoration: None;
+    color: #b54769;
 }
 
 .sub-title {
@@ -175,6 +191,19 @@ nav ul li a:hover::after {
     transition: background 0.5s, transform 0.5s;
 }
 
+.services-list .video-div {
+    padding: 7px;
+}
+
+.services-list .driver-project {
+    height: 30vh;
+}
+
+.services-list div video {
+    width: 100%;
+    height: 100%;
+}
+
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
@@ -199,6 +228,19 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
+#know-more {
+    margin-top: 50px;
+}
+
+#know-more i {
+    font-size: 50px;
+}
+
+#know-more a {
+    text-decoration: None;
+    color:#fff;
+}
+
 #portfolio {
     padding: 50px 0;
 }
@@ -218,6 +260,7 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -361,13 +404,27 @@ form .btn2 {
     color: #ff004f
 }
 
+.project {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 nav .fas {
     display: None;
 }
 
+@media only screen and (max-width: 1024px) {
+    #header {
+        background-image: url("./images/background-tablet.jpg");
+    }
+    
+}
+
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url("images/phone-background.png");
+        background-image: url("images/background-phone.jpg");
     }
 
     .header-text {
@@ -443,3 +500,27 @@ nav .fas {
     margin-top: -35px;
     display: block;
 }
+
+
+@media only screen and (max-width: 420px) {
+    .services-list div h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #project-heading {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #project-heading {
+        font-size: 30px;
+    }
+
+    #project-container p {
+        font-size: 12px;   
+    }
+}
+
